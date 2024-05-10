@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <title>Carrossel Animado</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Informações</a>
+      <a href="#">Fale Conosco</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="list">
+      <div class="list-item">
+        <img src="./images/img1.png" alt="foto-bali">
+        <div class="content">
+          <h2 class="title">Bali</h2>
+          <p class="description">
+            O nome Bali, com o qual a ilha foi batizada no século IX, deriva da palavra Wali. Wali ou Wari era o termo
+            pelo qual os nativos, que muito veneravam seus deuses, chamavam o ato de adoração. Wali é uma palavra do
+            sânscrito que significa "sacrifício oferecido ao deus", "adoração", "culto" ou "oferenda".
+          </p>
+          <div class="buttons">
+            <button>Saiba Mais</button>
+            <button>Acessar</button>
+          </div>
+        </div>
+        <div class="list-item">
+          <img src="./images/img2.png" alt="foto-paris">
+          <div class="content">
+            <h2 class="title">Paris</h2>
+            <p class="description">
+              Paris deve seu nome aos Parísios, um povo gaulês que habitava a região antes da chegada dos romanos.
+              Após conquistá-los, os romanos rebatizaram seu assentamento como "Lutécia dos Parísios" (em latim: Lutetia
+              Parisiorum). Ao longo do século IX, essa denominação, aos poucos, deu lugar ao nome atual. Os Parísios
+              também emprestaram seu nome a algumas outras vilas da região, tais como Villeparisis,
+              Cormeilles-en-Parisis, e Fontenay-en-Parisis.
+            </p>
+            <div class="buttons">
+              <button>Saiba Mais</button>
+              <button>Acessar</button>
+            </div>
+          </div>
+        </div>
+        <div class="list-item">
+          <img src="./images/img3.png" alt="foto-roma">
+          <div class="content">
+            <h2 class="title">Roma</h2>
+            <p class="description">
+              Roma, atualmente, é um dos destinos turísticos mais importantes do mundo, devido à imensidão incalculável
+              de seus tesouros arqueológicos e artísticos, bem como por suas tradições únicas, a beleza de suas vistas
+              panorâmicas e a majestade de seus magníficos parques. Entre os recursos turísticos mais importantes da
+              cidade estão os seus muitos museus, como os Museus Capitolinos, os Museus Vaticanos e a Galleria Borghese
+              e outros dedicados à arte moderna e contemporânea, além de aquedutos, fontes, igrejas, palácios, edifícios
+              históricos, monumentos e as ruínas do Fórum Romano e da catacumba romana. Roma é a terceira cidade mais
+              visitada da União Europeia, depois de Londres e Paris e recebe uma média de 7 a 10 milhões de turistas por
+              ano, número que, por vezes, dobra em anos sagrados. O Coliseu (com 4 milhões de turistas) e os Museus
+              Vaticanos (com 4,2 milhões de turistas) são o 39º e 37º lugares mais visitados do mundo, respectivamente.
+            </p>
+            <div class="buttons">
+              <button>Saiba Mais</button>
+              <button>Acessar</button>
+            </div>
+          </div>
+        </div>
+        <div class="list-item">
+          <img src="./images/img4.png" alt="foto-veneza">
+          <div class="content">
+            <h2 class="title">Veneza</h2>
+            <p class="description">
+              O nome Veneza está relacionado com o povo conhecido como Vênetos, talvez o mesmo povo chamado por Homero
+              de Eneti (Ενετοί). O significado da palavra é incerto. As conexões com o verbo "venire" (chegar) e
+              (Eslo)vénia são fantasias. Uma conexão com a palavra "venetus" (mar azul) é possível.
+            </p>
+            <div class="buttons">
+              <button>Saiba Mais</button>
+              <button>Acessar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="thumb">
+      <div class="thumb-item">
+        <img src="./images/img1.png" alt="foto-cidade-bali">
+        <div class="content">
+          <h3>Bali</h3>
+          <p>Visite Bali</p>
+        </div>
+      </div>
+
+      <div class="thumb-item">
+        <img src="./images/img2.png" alt="foto-cidade-paris">
+        <div class="content">
+          <h3>Paris</h3>
+          <p>Visite Paris</p>
+        </div>
+      </div>
+
+      <div class="thumb-item">
+        <img src="./images/img3.png" alt="foto-cidade-roma">
+        <div class="content">
+          <h3>Roma</h3>
+          <p>Visite Roma</p>
+        </div>
+      </div>
+
+      <div class="thumb-item">
+        <img src="./images/img4.png" alt="foto-cidade-veneza">
+        <div class="content">
+          <h3>Veneza</h3>
+          <p>Visite Veneza</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="arrows">
+      <button class="back" onclick="moveItemsOnClick(type)">
+        < </button>
+          <button class="next" onclick="moveItemsOnClick(type)"> > </button>
+    </div>
+  </main>
+  <script src="./script.js"></script>
+</body>
+
+</html>
